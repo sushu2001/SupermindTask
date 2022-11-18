@@ -12,21 +12,21 @@ const Pagination = ({postsPerPage, totalPosts, paginate}) => {
         <ul class="pagination">
             
           <li class="page-item">
-            <a class="page-link" href="#">
+            <button class="page-link" >
               Previous
-            </a>
+            </button>
           </li>  
             {
                 pageNumbers.map((number) => (
                   <li key={number} className="page-item">
-                    <a onClick={()=>paginate(number)} href="#" className="page-link">{number}</a>
+                    <button onClick={()=>paginate(number)}  className="page-link">{number}</button>
                   </li>
                 ))
             }
           <li class="page-item">
-            <a class="page-link" href="#">
+            <button class="page-link" >
               Next
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
