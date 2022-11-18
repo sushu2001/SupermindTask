@@ -98,6 +98,7 @@ class DisplayTable extends React.Component {
       searchUsername: "",
       searchEmail: "",
       postsPerPage: 10,
+      searchGender:new Set(["Male","Female","Genderqueer","Non-binary","Genderfluid","Polygender","Bigender","Agender"]),
       searchSub: new Set(["Active", "Blocked", "Pending", "Idle"]),
     });
     this.userRef.current.value = "";
